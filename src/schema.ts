@@ -9,7 +9,8 @@ import {
   asNexusMethod,
   enumType,
 } from 'nexus'
-import { GraphQLDateTime } from 'graphql-iso-date'
+import { GraphQLDateTime } from 'graphql-scalars';
+
 import { Context } from './context'
 
 export const DateTime = asNexusMethod(GraphQLDateTime, 'date')
