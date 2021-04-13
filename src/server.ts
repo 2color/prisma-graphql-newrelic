@@ -7,6 +7,7 @@ const server = new ApolloServer({
   schema: schema,
   context: context,
   plugins: [newrelicPlugin],
+  playground: true,
 })
 
 server.listen({ port: process.env.PORT || 4000 }).then(async ({ url }) => {
